@@ -1,5 +1,35 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Starting
+
+Firstly, we have to run additional 2 servers namely for API and another for RTMP.
+
+## For API-server:
+
+### `cd api`
+### `npm start || yarn start`
+
+API-server will start running on port 3001.
+
+## For RTMP-server:
+
+### `cd rtmpserver`
+### `npm start || yarn start`
+
+RTMP-server will start running on port 8000.
+
+## OBS-setup
+
+We have to setup OBS for streaming. After that set stream settings:
+### Settings
+### Stream -> Service to Custom
+### Server -> rtmp://localhost/live
+### Start Streaming
+
+Key(it is actually ID of each object) can be found in [db.json](https://github.com/Zeeshan-2k1/Streams/blob/main/api/db.json) 
+
+[More](https://github.com/illuspas/Node-Media-Server)
+
 ## Available Scripts
 
 In the project directory, you can run:
